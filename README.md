@@ -1,6 +1,8 @@
 intro_android_demo
 ==================
 
+This is cloned from https://github.com/codepath/intro_android_demo.git for learning
+
 Demo of app exercises for Intro to Android
 
 <img src="http://i.imgur.com/DzkMzcy.png" width="250" />&nbsp;

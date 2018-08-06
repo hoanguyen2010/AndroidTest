@@ -11,9 +11,29 @@ android {
     }
 
     buildTypes {
+        debug{
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
         release {
+            debuggable false
             minifyEnabled false
+	        shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors{
+        free{
+            dimension "version"
+            applicationIdSuffix ".demo"
+            versionNameSuffix "-demo"
+        }
+        paid{
+            dimension "version"
+            applicationIdSuffix ".full"
+            versionNameSuffix "-version"
         }
     }
 }
